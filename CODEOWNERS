@@ -3,26 +3,12 @@
 
 # These owners will be the default owners for everything in
 # the repo. Unless a later match takes precedence,
-# @davetcoleman and @mlautman will be requested for
+# @nbbrooks will be requested for
 # review when someone opens a pull request.
 *       @nbbrooks
 
 # Order is important; the last matching pattern takes the most
 # precedence. When someone opens a pull request that only
-# modifies png files, only @nbbrooks and not the global
+# modifies png files, only @davetcoleman and not the global
 # owner(s) will be requested for a review.
-*.png    @davetcoleman @mlautman
-
-# In this example, @henningkayser owns any files in the src
-# directory at the root of the repository and any of its
-# subdirectories.
-/src/ @henningkayser
-
-# The `launch/*` pattern will match files like
-# `launch/end_effector_setup.launch` but not further nested files like
-# `launch/robots/load_baxter.launch.xml`.
-launch/*  @robroboto
-
-# In this example, @mcevoyandy owns any file in a rviz directory
-# anywhere in your repository.
-rviz/ @mcevoyandy
+*.png    @davetcoleman
